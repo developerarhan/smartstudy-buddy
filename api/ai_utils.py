@@ -1,11 +1,12 @@
-def generate_study_plan(subject, hours_per_day, days):
-    plan = []
+def generate_study_plan(subject, hours_per_day, days, use_ai=False):
+    if use_ai:
+        return ai_generated_plan(subject, hours_per_day, days)
 
-    for day in range(1, days+1):
-        plan.append({
+    return [
+        {
             "day": day,
             "topic": f"{subject} - Topic {day}",
             "hours": hours_per_day
-        })
-
-    return plan
+        }
+        for day in range(1, days + 1)
+    ]
