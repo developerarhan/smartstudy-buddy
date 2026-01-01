@@ -1,0 +1,19 @@
+frontend/
+│
+├── src/
+│   ├── components/
+│   │   ├── StudyForm.jsx
+│   │   ├── StudyPlan.jsx
+│   │   └── Loader.jsx
+│   │
+│   ├── pages/
+│   │   └── Home.jsx
+│   │
+│   ├── services/
+│   │   └── api.js
+│   │
+│   ├── App.jsx
+│   ├── index.js
+│   └── index.css
+│
+└── package.json
