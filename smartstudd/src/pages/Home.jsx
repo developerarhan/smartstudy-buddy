@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 import StudyForm from "../components/StudyForm";
 import StudyPlan from "../components/StudyPlan";
 import Loader from "../components/Loader";
+import ThemeToggle from "../components/ThemeToggle";
 import { generateStudyPlan } from "../services/api";
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
-  const [studyPlan, setStudyPlan] = useState(null);
+  const [studyPlan, setStudyPlan] = useState([]);
 
-  // ✅ Backend connection test
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/test/")
+    fetch("http://127.0.0.1:8000/api/health/")
       .then((res) => res.json())
       .then((data) => console.log("Backend says:", data))
       .catch((err) => console.error("Backend error:", err));
@@ -20,7 +20,9 @@ const Home = () => {
     try {
       setLoading(true);
       const data = await generateStudyPlan(formData);
-      setStudyPlan(data.plan);
+      console.log("API RESPONSE:", data);
+
+      setStudyPlan(data?.data?.plan || data?.plan || []);
     } catch (err) {
       alert("Failed to generate plan");
     } finally {
@@ -33,6 +35,7 @@ const Home = () => {
       <h1>🎯 SmartStudy Buddy</h1>
       <p>AI-powered study planner</p>
 
+      <ThemeToggle />
       <StudyForm onSubmit={handleGeneratePlan} />
 
       {loading && <Loader />}

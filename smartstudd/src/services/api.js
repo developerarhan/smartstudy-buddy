@@ -1,7 +1,7 @@
 const BASE_URL = "http://127.0.0.1:8000/api";
 
 export const generateStudyPlan = async (payload) => {
-  const response = await fetch(`${BASE_URL}/generate-plan/`, {
+  const response = await fetch(`${BASE_URL}/study-plan/`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

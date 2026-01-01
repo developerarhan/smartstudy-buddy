@@ -1,0 +1,89 @@
+.study-plan-wrapper {
+  margin-top: 40px;
+}
+
+.plan-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.plan-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card */
+.plan-card {
+  background: var(--card-bg);
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 12px 25px var(--shadow);
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px var(--shadow);
+}
+
+.plan-day {
+  background: var(--primary);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+/* Topic */
+.plan-topic {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+/* Hours */
+.plan-hours {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+/* Badges */
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Badge variants */
+.badge.revision {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge.practice {
+  background: #ecfeff;
+  color: #155e75;
+}

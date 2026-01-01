@@ -1,7 +1,10 @@
+import "./Loader.css";
+
 const Loader = () => {
   return (
-    <div style={{ textAlign: "center", marginTop: "20px" }}>
-      <p>⏳ Generating your study plan...</p>
+    <div className="loader">
+      <div className="spinner"></div>
+      <p>AI is crafting your study plan…</p>
     </div>
   );
 };

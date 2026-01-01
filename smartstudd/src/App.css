@@ -1,41 +1,59 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  margin: 0;
-}
-
 .container {
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .card {
-  background: white;
+  background: #ffffff;
   padding: 20px;
+  border-radius: 12px;
   margin-top: 20px;
-  border-radius: 8px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
 button {
-  width: 100%;
-  padding: 10px;
   background: #4f46e5;
   color: white;
+  padding: 10px;
+  border-radius: 8px;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
 }
 
 .plan-item {
-  background: #eef2ff;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 5px;
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.plan-day {
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+.badge {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 20px;
 }
