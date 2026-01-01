@@ -3,8 +3,6 @@ import json
 import re
 from dotenv import load_dotenv
 from groq import Groq
-print("DEBUG GROQ KEY:", os.getenv("GROQ_API_KEY"))
-
 
 load_dotenv()
 
