@@ -28,12 +28,14 @@ It helps students plan their learning efficiently based on subject, available st
 🛠 Tech Stack
 
   Frontend
+  
     - React (Vite)
     - JavaScript (ES6+)
     - CSS (Custom modern UI)
     - Fetch API
     
   Backend
+  
     - Django 
     - Django REST Framework
     - Groq LLM API
@@ -80,11 +82,11 @@ smartstudy-buddy/
 
 🧪 Local Setup
 
-  - 1️⃣ Clone the Repository
+  1️⃣ Clone the Repository
     - git clone https://github.com/developerarhan/smartstudy-buddy.git
     - cd smartstudy-buddy
 
-  - 2️⃣ Backend Setup
+  2️⃣ Backend Setup
     - cd backend
     - python -m venv study_env 
     - study_env\Scripts\activate   # Windows
@@ -94,7 +96,7 @@ smartstudy-buddy/
   - Backend will run at:
     http://127.0.0.1:8000
 
-  - 3️⃣ Frontend Setup
+  3️⃣ Frontend Setup
     - cd frontend
     - npm install
     - npm run dev
