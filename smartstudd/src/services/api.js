@@ -1,4 +1,4 @@
-const BASE_URL = "http://127.0.0.1:8000/api";
+const BASE_URL = "https://smartstudy-backend-1okw.onrender.com/api";
 
 export const generateStudyPlan = async (payload) => {
   const response = await fetch(`${BASE_URL}/study-plan/`, {
