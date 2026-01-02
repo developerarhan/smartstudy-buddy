@@ -150,7 +150,8 @@ smartstudy-buddy/
   - Full-Stack Developer
   - Collaborator on SmartStudy Buddy
   - 🔗 GitHub: https://github.com/ZeroxxG
-📌 Both contributors worked on the same branch and same deployed domain
+  
+  📌 Both contributors worked on the same branch and same deployed domain
 
 📄 License
 This project is licensed under the MIT License.
