@@ -25,7 +25,6 @@ def study_plan(request):
         data["days"]
     )
 
-    # SAVE TO DATABASE
     StudyPlan.objects.create(
         subject=data["subject"],
         hours_per_day=data["hours_per_day"],
