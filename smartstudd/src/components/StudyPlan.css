@@ -1,89 +1,93 @@
 .study-plan-wrapper {
-  margin-top: 40px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 .plan-title {
   text-align: center;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 40px;
   color: #111827;
-  margin-bottom: 6px;
 }
 
-.plan-subtitle {
-  text-align: center;
-  font-size: 14px;
-  color: #6b7280;
-  margin-bottom: 30px;
-}
-
-/* Grid layout */
 .plan-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
 }
 
-/* Individual card */
 .plan-card {
-  background: var(--card-bg);
-  padding: 22px;
+  background: #ffffff;
   border-radius: 18px;
-  box-shadow: 0 12px 25px var(--shadow);
-  position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  padding: 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
 }
 
 .plan-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px var(--shadow);
+  transform: translateY(-4px);
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .plan-day {
-  background: var(--primary);
+  background: #4f46e5;
   color: #fff;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
-/* Topic */
+.plan-hours {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
 .plan-topic {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  margin: 16px 0;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.plan-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.block-time {
+  font-weight: 700;
+  min-width: 32px;
+}
+
+.block-text {
   color: #1f2937;
 }
 
-/* Hours */
-.plan-hours {
-  font-size: 14px;
-  color: #374151;
-  margin-bottom: 14px;
+/* Block Types */
+.block.theory {
+  background: #eef2ff;
 }
 
-/* Badges */
-.badges {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.badge {
-  font-size: 12px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-weight: 500;
-}
-
-/* Badge variants */
-.badge.revision {
-  background: #fef3c7;
-  color: #92400e;
-}
-
-.badge.practice {
+.block.practice {
   background: #ecfeff;
-  color: #155e75;
+}
+
+.block.revision {
+  background: #fef3c7;
 }
