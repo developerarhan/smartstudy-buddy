@@ -48,6 +48,7 @@ It helps students plan their learning efficiently based on subject, available st
     👉 https://smartstudy-backend-1okw.onrender.com/api/health
 
 📂 Project Structure
+
 smartstudy-buddy/
 │
 ├── backend/
