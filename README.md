@@ -22,21 +22,24 @@ It helps students plan their learning efficiently based on subject, available st
   - **main** → Project documentation
   - **frontend** → React frontend application
   - **backend** → Django REST API backend
-  - 
+ 
   Please switch branches to view the respective code.
 
 🛠 Tech Stack
-  Frontend
+
+   Frontend
     - React (Vite)
     - JavaScript (ES6+)
     - CSS (Custom modern UI)
     - Fetch API
+    
   Backend
     - Django 
     - Django REST Framework
     - Groq LLM API
     - Python
     - SQLite (can be upgraded)
+    
   Deployment
    - Frontend: Render (Static Site)
    - Backend: Render (Web Service)
