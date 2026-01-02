@@ -28,9 +28,13 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 SECRET_KEY = 'django-insecure-f0c6mhzs-bo%q*biwy&^%%(71v&6b@8o!b^(_q$(j(kx3q#5z^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "smartstudy-backend.onrender.com",
+    "localhost",
+    "127.0.0.1"
+]
 
 
 # Application definition
