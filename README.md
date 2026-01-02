@@ -27,7 +27,7 @@ It helps students plan their learning efficiently based on subject, available st
 
 🛠 Tech Stack
 
-   Frontend
+  Frontend
     - React (Vite)
     - JavaScript (ES6+)
     - CSS (Custom modern UI)
@@ -80,25 +80,25 @@ smartstudy-buddy/
 
 🧪 Local Setup
 
-  1️⃣ Clone the Repository
+  - 1️⃣ Clone the Repository
     - git clone https://github.com/developerarhan/smartstudy-buddy.git
     - cd smartstudy-buddy
 
-  2️⃣ Backend Setup
+  - 2️⃣ Backend Setup
     - cd backend
     - python -m venv study_env 
     - study_env\Scripts\activate   # Windows
     - pip install -r requirements.txt
     - python manage.py migrate
     - python manage.py runserver
-  Backend will run at:
+  - Backend will run at:
     http://127.0.0.1:8000
 
-  3️⃣ Frontend Setup
+  - 3️⃣ Frontend Setup
     - cd frontend
     - npm install
     - npm run dev
-  Frontend will run at:
+  - Frontend will run at:
     http://localhost:5173
 
 🔌 API Endpoints
@@ -151,6 +151,7 @@ smartstudy-buddy/
   - 🔗 GitHub: https://github.com/developerarhan
   
   MD Hammad
+  - B.Tech (AIML)
   - Full-Stack Developer
   - Collaborator on SmartStudy Buddy
   - 🔗 GitHub: https://github.com/ZeroxxG
